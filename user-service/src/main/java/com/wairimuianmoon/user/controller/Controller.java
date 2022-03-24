@@ -21,4 +21,8 @@ public class Controller {
     public ResponseTemplate getUserDepartment(@PathVariable("id") Long userId){
         return this.service.getUserDepartment(userId);
     }
+    @Getmapping("/users/{user}")
+    public User getUsers(@pathVariable("username") String name){
+        return this.servcie.getUsers(name);
+    }
 }
